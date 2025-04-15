@@ -1,0 +1,46 @@
+{
+    "cmake.configureOnOpen": true,
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.defaultVariants": {
+        "buildType": {
+            "default": "debug",
+            "description": "优化级别",
+            "choices": {
+                "debug": {
+                    "short": "Debug",
+                    "long": "禁用优化 - 包含调试信息",
+                    "buildType": "Debug"
+                },
+                "release": {
+                    "short": "Release",
+                    "long": "启用优化 - 不包含调试信息",
+                    "buildType": "Release"
+                }
+            }
+        }
+    },
+    "cmake.generator": "Unix Makefiles",
+    "cmake.configureSettings": {
+        "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${workspaceFolder}/build/bin"
+    },
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "*.h": "cpp",
+        "*.hpp": "cpp",
+        "*.cpp": "cpp",
+        "CMakeLists.txt": "cmake"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "python.autoComplete.extraPaths": [
+        "/home/tyjt/message/szy_radar/install/szy_radar/lib/python3.10/site-packages",
+        "/home/tyjt/message/pc_msg/install/pc_msg/lib/python3.10/site-packages",
+        "/home/tyjt/message/stamp_markerarray/install/stamp_markerarray/lib/python3.10/site-packages",
+        "/opt/ros/iron/lib/python3.10/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/tyjt/message/szy_radar/install/szy_radar/lib/python3.10/site-packages",
+        "/home/tyjt/message/pc_msg/install/pc_msg/lib/python3.10/site-packages",
+        "/home/tyjt/message/stamp_markerarray/install/stamp_markerarray/lib/python3.10/site-packages",
+        "/opt/ros/iron/lib/python3.10/site-packages"
+    ]
+}
